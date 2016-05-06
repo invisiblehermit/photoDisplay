@@ -1,0 +1,1229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My journey in SF</title>
+
+<link href ="styles.css" type="text/css" rel="stylesheet"/>
+
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+
+<script type="text/javascript">
+        $(function(){
+		
+
+		$('.box1').hover(function(){
+				
+				
+			$(this).addClass('onhover');
+				}, 
+			
+			function(){
+                $(this).removeClass('onhover');
+				
+				});//end of the hover	
+			
+		
+			 
+			
+		 $('.box1').click(
+
+		 			
+			function(){
+				if($(this).hasClass('clicked1')){$('#group>div').eq(0).siblings().hide();
+				$('#group1').show(500);
+				$(this).removeClass('onclick') 
+				$(this).removeClass('clicked1');
+				}
+		else{	
+		
+				$(this).addClass('onclick');
+				$(this).addClass('clicked1');
+				$('#group1').hide(500);
+				$('.box2').show(100);
+				$('.box3').delay(100).show(100);
+				$('.box3').delay(200).show(100);
+				$('.box4').delay(300).show(100);
+				$('.box5').delay(400).show(100);
+				$('.box6').delay(500).show(100);
+				$('.box7').delay(600).show(100);
+				$('.box8').delay(700).show(100);
+				$('.box9').delay(800).show(100);
+				
+}
+		
+				
+				
+
+
+
+
+
+
+
+
+
+});//end of the click function				
+			
+			
+			
+			$('.box2').hover(
+			function(){
+				$(this).addClass('box2hover')
+				}, 
+			function(){
+                $(this).removeClass('box2hover');
+				});//end of the box2hover
+
+			
+			$('.box3').hover(
+			function(){
+				$(this).addClass('box3hover')
+				}, 
+			function(){
+                $(this).removeClass('box3hover');
+				});//end of the box2hover
+
+			
+			
+			$('.box4').hover(
+			function(){
+				$(this).addClass('box4hover')
+				}, 
+			function(){
+                $(this).removeClass('box4hover');
+				});//end of the box2hover
+
+			
+			
+			$('.box5').hover(
+			function(){
+				$(this).addClass('box5hover')
+				}, 
+			function(){
+                $(this).removeClass('box5hover');
+				});//end of the box2hover
+
+			
+			
+			
+			$('.box6').hover(
+			function(){
+				$(this).addClass('box6hover')
+				}, 
+			function(){
+                $(this).removeClass('box6hover');
+				});//end of the box2hover
+
+			
+			$('.box7').hover(
+			function(){
+				$(this).addClass('box7hover')
+				}, 
+			function(){
+                $(this).removeClass('box7hover');
+				});//end of the box2hover
+
+			
+			$('.box8').hover(
+			function(){
+				$(this).addClass('box8hover')
+				}, 
+			function(){
+                $(this).removeClass('box8hover');
+				});//end of the box2hover
+				
+				
+			$('.box9').hover(
+			function(){
+				$(this).addClass('box9hover')
+				}, 
+			function(){
+                $(this).removeClass('box9hover');
+				});//end of the box2hover
+	
+				
+				
+				
+
+			
+			
+			
+			
+			
+			
+			
+$('.box2').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clicked')){
+			$(this).animate({marginTop:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				$('.box3').delay(100).show(100);
+				$('.box4').delay(200).show(100);
+				$('.box5').delay(300).show(100);
+				$('.box6').delay(400).show(100);
+				$('.box7').delay(500).show(100);
+				$('.box8').delay(600).show(100);
+				$('.box9').delay(700).show(100);
+				
+				$('.box1').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			$(this).removeClass('clicked');
+			$.backstretch(["images/bg/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg/bg2.jpg"], {duration: 3000, fade: 750});	
+		$(this).animate({marginTop:'-250px'},500);
+		$("#group>div").eq(1).siblings().hide();
+		$(this).addClass('clicked');
+		}//end of the else
+		 
+		
+		
+		/*$('.box1').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+		$('.box5').hide();
+		$('.box6').hide();
+		$('.box7').hide();
+		$('.box8').hide();
+		$('.box9').hide();	*/
+			
+});//end of box2 click function
+
+
+
+
+
+$('.box3').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clicked')){
+			$(this).animate({marginLeft:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				$('.box4').delay(100).show(100);
+				$('.box5').delay(200).show(100);
+				$('.box6').delay(300).show(100);
+				$('.box7').delay(400).show(100);
+				$('.box8').delay(500).show(100);
+				$('.box9').delay(600).show(100);
+				$('.box2').delay(700).show(100);
+				
+				$('.box1').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clicked');
+			$.backstretch(["images/bg/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg/bg3.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginLeft:'-312px'},500);
+		$("#group>div").eq(2).siblings().hide();
+		$(this).addClass('clicked');
+		}//end of the else
+		 
+		
+		
+		/*$('.box1').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+		$('.box5').hide();
+		$('.box6').hide();
+		$('.box7').hide();
+		$('.box8').hide();
+		$('.box9').hide();	*/
+			
+});//end of box3click function
+
+
+
+
+
+
+$('.box4').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clicked')){
+			$(this).animate({marginTop:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				
+				$('.box5').delay(100).show(100);
+				$('.box6').delay(200).show(100);
+				$('.box7').delay(300).show(100);
+				$('.box8').delay(400).show(100);
+				$('.box9').delay(500).show(100);
+				$('.box2').delay(600).show(100);
+				$('.box3').delay(700).show(100);
+				
+				$('.box1').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clicked');
+			$.backstretch(["images/bg/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg/bg4.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginTop:'-400px'},500);
+		$("#group>div").eq(3).siblings().hide();
+		$(this).addClass('clicked');
+		}//end of the else
+		 
+		
+		
+		/*$('.box1').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+		$('.box5').hide();
+		$('.box6').hide();
+		$('.box7').hide();
+		$('.box8').hide();
+		$('.box9').hide();	*/
+			
+});//end of box4click function
+
+
+
+
+$('.box5').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clicked')){
+			$(this).animate({marginLeft:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				
+				
+				$('.box6').delay(100).show(100);
+				$('.box7').delay(200).show(100);
+				$('.box8').delay(300).show(100);
+				$('.box9').delay(400).show(100);
+				$('.box2').delay(500).show(100);
+				$('.box3').delay(600).show(100);
+				$('.box4').delay(700).show(100);
+				
+				$('.box1').delay(800).show(100);
+			
+			
+			
+			
+			
+			$(this).removeClass('clicked');
+			$.backstretch(["images/bg/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg/bg5.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginLeft:'-624px'},500);
+		$("#group>div").eq(4).siblings().hide();
+		$(this).addClass('clicked');
+		}//end of the else
+		 
+		
+		
+		/*$('.box1').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+		$('.box5').hide();
+		$('.box6').hide();
+		$('.box7').hide();
+		$('.box8').hide();
+		$('.box9').hide();	*/
+			
+});//end of box5click function
+
+
+$('.box6').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clicked')){
+			$(this).animate({marginTop:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				$('.box7').delay(100).show(100);
+				$('.box8').delay(200).show(100);
+				$('.box9').delay(300).show(100);
+				$('.box2').delay(400).show(100);
+				$('.box3').delay(500).show(100);
+				$('.box4').delay(600).show(100);
+				$('.box5').delay(700).show(100);
+				
+				$('.box1').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clicked');
+			$.backstretch(["images/bg/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg/bg6.jpg"], {duration: 3000, fade: 750});	
+		$(this).animate({marginTop:'-250px'},500);
+		$("#group>div").eq(5).siblings().hide();
+		$(this).addClass('clicked');
+		}//end of the else
+		 
+		
+		
+		/*$('.box1').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+		$('.box5').hide();
+		$('.box6').hide();
+		$('.box7').hide();
+		$('.box8').hide();
+		$('.box9').hide();	*/
+			
+});//end of box6click function
+
+
+
+$('.box7').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clicked')){
+			$(this).animate({marginLeft:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				
+				$('.box8').delay(100).show(100);
+				$('.box9').delay(200).show(100);
+				$('.box2').delay(300).show(100);
+				$('.box3').delay(400).show(100);
+				$('.box4').delay(500).show(100);
+				$('.box5').delay(600).show(100);
+				$('.box6').delay(700).show(100);
+				
+				$('.box1').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clicked');
+			$.backstretch(["images/bg/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg/bg7.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginLeft:'-624px'},500);
+		$("#group>div").eq(6).siblings().hide();
+		$(this).addClass('clicked');
+		}//end of the else
+		 
+
+});//end of box7click function
+
+
+
+$('.box8').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clicked')){
+			$(this).animate({marginTop:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				
+				
+				$('.box9').delay(100).show(100);
+				$('.box2').delay(200).show(100);
+				$('.box3').delay(300).show(100);
+				$('.box4').delay(400).show(100);
+				$('.box5').delay(500).show(100);
+				$('.box6').delay(600).show(100);
+				$('.box7').delay(700).show(100);
+				
+				$('.box1').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clicked');
+			$.backstretch(["images/bg/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg/bg8.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginTop:'-100px'},500);
+		$("#group>div").eq(7).siblings().hide();
+		$(this).addClass('clicked');
+		}//end of the else
+		 
+
+});//end of box8click function
+
+
+$('.box9').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clicked')){
+			$(this).animate({marginLeft:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				
+				
+				
+				$('.box2').delay(100).show(100);
+				$('.box3').delay(200).show(100);
+				$('.box4').delay(300).show(100);
+				$('.box5').delay(400).show(100);
+				$('.box6').delay(500).show(100);
+				$('.box7').delay(600).show(100);
+				$('.box8').delay(700).show(100);
+				
+				$('.box1').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clicked');
+			$.backstretch(["images/bg/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg/bg9.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginLeft:'-312px'},500);
+		$("#group>div").eq(8).siblings().hide();
+		$(this).addClass('clicked');
+		}//end of the else
+		 
+
+});//end of box8click function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Red wood national Park 
+
+
+$('.box1a').hover(function(){
+				
+				
+			$(this).addClass('onhovera');
+				}, 
+			
+			function(){
+                $(this).removeClass('onhovera');
+				
+				});//end of the hover	
+			
+		
+			 
+			
+		 $('.box1a').click(
+
+		 			
+			function(){
+				if($(this).hasClass('clicked1a')){$('#group1>div').eq(0).siblings().hide();
+				$('#group').show(500);
+				$(this).removeClass('onclicka') 
+				$(this).removeClass('clicked1a');
+				}
+		else{	
+		
+				$(this).addClass('onclicka');
+				$(this).addClass('clicked1a');
+				$('#group').hide(500);
+				$('.box2a').show(100);
+				$('.box3a').delay(100).show(100);
+				$('.box3a').delay(200).show(100);
+				$('.box4a').delay(300).show(100);
+				$('.box5a').delay(400).show(100);
+				$('.box6a').delay(500).show(100);
+				$('.box7a').delay(600).show(100);
+				$('.box8a').delay(700).show(100);
+				$('.box9a').delay(800).show(100);
+				
+}
+		
+				
+				
+
+
+
+
+
+
+
+
+
+});//end of the click function				
+			
+			
+			
+			$('.box2a').hover(
+			function(){
+				$(this).addClass('box2hovera')
+				}, 
+			function(){
+                $(this).removeClass('box2hovera');
+				});//end of the box2hover
+
+			
+			$('.box3a').hover(
+			function(){
+				$(this).addClass('box3hovera')
+				}, 
+			function(){
+                $(this).removeClass('box3hovera');
+				});//end of the box2hover
+
+			
+			
+			$('.box4a').hover(
+			function(){
+				$(this).addClass('box4hovera')
+				}, 
+			function(){
+                $(this).removeClass('box4hovera');
+				});//end of the box2hover
+
+			
+			
+			$('.box5a').hover(
+			function(){
+				$(this).addClass('box5hovera')
+				}, 
+			function(){
+                $(this).removeClass('box5hovera');
+				});//end of the box2hover
+
+			
+			
+			
+			$('.box6a').hover(
+			function(){
+				$(this).addClass('box6hovera')
+				}, 
+			function(){
+                $(this).removeClass('box6hovera');
+				});//end of the box2hover
+
+			
+			$('.box7a').hover(
+			function(){
+				$(this).addClass('box7hovera')
+				}, 
+			function(){
+                $(this).removeClass('box7hovera');
+				});//end of the box2hover
+
+			
+			$('.box8a').hover(
+			function(){
+				$(this).addClass('box8hovera')
+				}, 
+			function(){
+                $(this).removeClass('box8hovera');
+				});//end of the box2hover
+				
+				
+			$('.box9a').hover(
+			function(){
+				$(this).addClass('box9hovera')
+				}, 
+			function(){
+                $(this).removeClass('box9hovera');
+				});//end of the box2hover
+	
+				
+				
+				
+
+			
+			
+			
+			
+			
+			
+			
+$('.box2a').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clickeda')){
+			$(this).animate({marginTop:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				$('.box3a').delay(100).show(100);
+				$('.box4a').delay(200).show(100);
+				$('.box5a').delay(300).show(100);
+				$('.box6a').delay(400).show(100);
+				$('.box7a').delay(500).show(100);
+				$('.box8a').delay(600).show(100);
+				$('.box9a').delay(700).show(100);
+				
+				$('.box1a').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			$(this).removeClass('clickeda');
+			$.backstretch(["images/bg1/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg1/bg2.jpg"], {duration: 3000, fade: 750});	
+		$(this).animate({marginTop:'-250px'},500);
+		$("#group1>div").eq(1).siblings().hide();
+		$(this).addClass('clickeda');
+		}//end of the else
+		 
+		
+		
+		/*$('.box1').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+		$('.box5').hide();
+		$('.box6').hide();
+		$('.box7').hide();
+		$('.box8').hide();
+		$('.box9').hide();	*/
+			
+});//end of box2 click function
+
+
+
+
+
+$('.box3a').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clickeda')){
+			$(this).animate({marginLeft:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				$('.box4a').delay(100).show(100);
+				$('.box5a').delay(200).show(100);
+				$('.box6a').delay(300).show(100);
+				$('.box7a').delay(400).show(100);
+				$('.box8a').delay(500).show(100);
+				$('.box9a').delay(600).show(100);
+				$('.box2a').delay(700).show(100);
+				
+				$('.box1a').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clickeda');
+			$.backstretch(["images/bg1/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg1/bg3.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginLeft:'-312px'},500);
+		$("#group1>div").eq(2).siblings().hide();
+		$(this).addClass('clickeda');
+		}//end of the else
+		 
+		
+		
+		/*$('.box1').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+		$('.box5').hide();
+		$('.box6').hide();
+		$('.box7').hide();
+		$('.box8').hide();
+		$('.box9').hide();	*/
+			
+});//end of box3click function
+
+
+
+
+
+
+$('.box4a').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clickeda')){
+			$(this).animate({marginTop:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				
+				$('.box5a').delay(100).show(100);
+				$('.box6a').delay(200).show(100);
+				$('.box7a').delay(300).show(100);
+				$('.box8a').delay(400).show(100);
+				$('.box9a').delay(500).show(100);
+				$('.box2a').delay(600).show(100);
+				$('.box3a').delay(700).show(100);
+				
+				$('.box1a').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clickeda');
+			$.backstretch(["images/bg1/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg1/bg4.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginTop:'-400px'},500);
+		$("#group1>div").eq(3).siblings().hide();
+		$(this).addClass('clickeda');
+		}//end of the else
+		 
+		
+		
+		/*$('.box1').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+		$('.box5').hide();
+		$('.box6').hide();
+		$('.box7').hide();
+		$('.box8').hide();
+		$('.box9').hide();	*/
+			
+});//end of box4click function
+
+
+
+
+$('.box5a').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clickeda')){
+			$(this).animate({marginLeft:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				
+				
+				$('.box6a').delay(100).show(100);
+				$('.box7a').delay(200).show(100);
+				$('.box8a').delay(300).show(100);
+				$('.box9a').delay(400).show(100);
+				$('.box2a').delay(500).show(100);
+				$('.box3a').delay(600).show(100);
+				$('.box4a').delay(700).show(100);
+				
+				$('.box1a').delay(800).show(100);
+			
+			
+			
+			
+			
+			$(this).removeClass('clickeda');
+			$.backstretch(["images/bg1/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg1/bg5.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginLeft:'-624px'},500);
+		$("#group1>div").eq(4).siblings().hide();
+		$(this).addClass('clickeda');
+		}//end of the else
+		 
+		
+		
+		/*$('.box1').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+		$('.box5').hide();
+		$('.box6').hide();
+		$('.box7').hide();
+		$('.box8').hide();
+		$('.box9').hide();	*/
+			
+});//end of box5click function
+
+
+$('.box6a').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clickeda')){
+			$(this).animate({marginTop:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				$('.box7a').delay(100).show(100);
+				$('.box8a').delay(200).show(100);
+				$('.box9a').delay(300).show(100);
+				$('.box2a').delay(400).show(100);
+				$('.box3a').delay(500).show(100);
+				$('.box4a').delay(600).show(100);
+				$('.box5a').delay(700).show(100);
+				
+				$('.box1a').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clickeda');
+			$.backstretch(["images/bg1/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg1/bg6.jpg"], {duration: 3000, fade: 750});	
+		$(this).animate({marginTop:'-250px'},500);
+		$("#group1>div").eq(5).siblings().hide();
+		$(this).addClass('clickeda');
+		}//end of the else
+		 
+		
+		
+		/*$('.box1').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+		$('.box5').hide();
+		$('.box6').hide();
+		$('.box7').hide();
+		$('.box8').hide();
+		$('.box9').hide();	*/
+			
+});//end of box6click function
+
+
+
+$('.box7a').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clickeda')){
+			$(this).animate({marginLeft:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				
+				$('.box8a').delay(100).show(100);
+				$('.box9a').delay(200).show(100);
+				$('.box2a').delay(300).show(100);
+				$('.box3a').delay(400).show(100);
+				$('.box4a').delay(500).show(100);
+				$('.box5a').delay(600).show(100);
+				$('.box6a').delay(700).show(100);
+				
+				$('.box1a').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clickeda');
+			$.backstretch(["images/bg1/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg1/bg7.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginLeft:'-624px'},500);
+		$("#group1>div").eq(6).siblings().hide();
+		$(this).addClass('clickeda');
+		}//end of the else
+		 
+
+});//end of box7click function
+
+
+
+$('.box8a').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clickeda')){
+			$(this).animate({marginTop:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				
+				
+				$('.box9a').delay(100).show(100);
+				$('.box2a').delay(200).show(100);
+				$('.box3a').delay(300).show(100);
+				$('.box4a').delay(400).show(100);
+				$('.box5a').delay(500).show(100);
+				$('.box6a').delay(600).show(100);
+				$('.box7a').delay(700).show(100);
+				
+				$('.box1a').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clickeda');
+			$.backstretch(["images/bg1/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg1/bg8.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginTop:'-100px'},500);
+		$("#group1>div").eq(7).siblings().hide();
+		$(this).addClass('clickeda');
+		}//end of the else
+		 
+
+});//end of box8click function
+
+
+$('.box9a').click(function(){			
+		
+		
+		
+		if($(this).hasClass('clickeda')){
+			$(this).animate({marginLeft:'0px'},500);
+			/*$('#group>div').delay(1000).show(500);*/
+			   
+				
+				
+				
+				
+				
+				$('.box2a').delay(100).show(100);
+				$('.box3a').delay(200).show(100);
+				$('.box4a').delay(300).show(100);
+				$('.box5a').delay(400).show(100);
+				$('.box6a').delay(500).show(100);
+				$('.box7a').delay(600).show(100);
+				$('.box8a').delay(700).show(100);
+				
+				$('.box1a').delay(800).fadeIn("fast");
+			
+			
+			
+			
+			
+			$(this).removeClass('clickeda');
+			$.backstretch(["images/bg1/bg1.jpg"], {duration: 3000, fade: 750});
+			}//end of the if
+		
+		else{
+			$.backstretch(["images/bg1/bg9.jpg"], {duration: 3000, fade: 750});
+		$(this).animate({marginLeft:'-312px'},500);
+		$("#group1>div").eq(8).siblings().hide();
+		$(this).addClass('clickeda');
+		}//end of the else
+		 
+
+});//end of box9click function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			});//end of document ready
+
+
+
+</script>
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+<img src="images/wf.png">
+
+<div id="group">
+
+<div class="box1">
+
+ </div><!--box1 end-->
+
+<div class="box2">
+
+</div><!--box2 end-->
+
+<div class="box3">
+
+</div><!--box3 end-->
+
+
+<div class="box4">
+
+</div><!--box4 end-->
+
+
+<div class="box5">
+
+</div><!--box5 end-->
+
+<div class="box6">
+
+</div><!--box6 end-->
+
+<div class="box7">
+
+</div><!--box7 end-->
+
+<div class="box8">
+
+</div><!--box8 end-->
+
+<div class="box9">
+
+</div><!--box9 end-->
+</div><!--end group-->
+
+
+
+<!--------------------------------------------------------->
+
+
+
+<div id="group1">
+
+<div class="box1a">
+
+ </div><!--box1a end-->
+
+<div class="box2a">
+
+</div><!--box2a end-->
+
+<div class="box3a">
+
+</div><!--box3a end-->
+
+
+<div class="box4a">
+
+</div><!--box4a end-->
+
+
+<div class="box5a">
+
+</div><!--box5a end-->
+
+<div class="box6a">
+
+</div><!--box6a end-->
+
+<div class="box7a">
+
+</div><!--box7a end-->
+
+<div class="box8a">
+
+</div><!--box8a end-->
+
+<div class="box9a">
+
+</div><!--box9a end-->
+</div><!--end group-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--wrapper end-->
+
+</body>
+</html>
